@@ -11,45 +11,22 @@ from src.main.api.db.crud.user_crud import UserCrudDb as User
 class TestDepositAccount:
     @pytest.mark.parametrize(
         "create_user_request",
-        [RandomModelGenerator.generate(CreateUserRequest)]
+        [RandomModelGenerator.generate(CreateUserRequest)],
+        indirect=True
     )
     def test_deposit_account(self, api_manager: ApiManager, create_user_request: CreateUserRequest, db_session: Session):
-        response = api_manager.admin_steps.create_user(create_user_request)
-
-        assert create_user_request.username == response.username
-        assert create_user_request.role == response.role
-
+        response = api_manager.user_steps.deposit(create_user_request)
         user_from_db = User.get_user_by_username(db_session, create_user_request.username)
         assert user_from_db.username == create_user_request.username
-
-        response = api_manager.user_steps.create_account(create_user_request)
-        assert response.balance == 0
-
-        accountId = response.id
-
-        deposit_sum = DepositRequest(accountId=accountId, amount=1000)
-
-        response = api_manager.user_steps.deposit(create_user_request, deposit_sum)
-
-        assert response.balance == 1000
-        assert AccountCrudDb.get_account_by_id(db_session, response.id).balance == 1000
-
+        assert response.balance == 1000, "Баланс != 1000"
+        assert AccountCrudDb.get_account_by_id(db_session, response.id).balance == 1000, "Сверяемся с бд"
 
     @pytest.mark.parametrize(
         "create_user_request",
-        [RandomModelGenerator.generate(CreateUserRequest)]
+        [RandomModelGenerator.generate(CreateUserRequest)],
+        indirect=True
     )
-    def test_create_account_invalid(self, db_session: Session, api_manager: ApiManager, create_user_request: CreateUserRequest):
-        response = api_manager.admin_steps.create_user(create_user_request)
-
-        assert create_user_request.username == response.username
-        assert create_user_request.role == response.role
-
-        response = api_manager.user_steps.create_account(create_user_request)
-        assert response.balance == 0
-
-        accountId = response.id
-
-        deposit_sum = DepositRequest(accountId=accountId, amount=10)
-
-        assert api_manager.user_steps.deposit_invalid(create_user_request, deposit_sum).status_code == 400
+    def test_deposit_invalid(self, db_session: Session, api_manager: ApiManager, create_user_request: CreateUserRequest):
+        assert api_manager.user_steps.deposit_invalid(create_user_request).status_code == 400, 'Пополняем счет пользователя суммой, которая не входит в диапозон допустимых значений'
+        user_from_db = User.get_user_by_username(db_session, create_user_request.username)
+        assert user_from_db.username == create_user_request.username
