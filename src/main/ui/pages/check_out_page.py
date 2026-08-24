@@ -1,8 +1,8 @@
 from playwright.sync_api import Page, expect
-
+from ui.utils.constants import Urls
 
 class CheckOutPage:
-    URL = "https://www.saucedemo.com/checkout-step-one.html"
+    URL = Urls.CHECKOUT
 
     def __init__(self, page: Page):
         self.page = page

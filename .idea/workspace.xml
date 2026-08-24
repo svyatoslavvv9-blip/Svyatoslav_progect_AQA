@@ -2,19 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74eb1841-7c74-45c4-8789-cf10eefa9ef3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/ui/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/ui/pages/basket_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/ui/pages/catalog_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/ui/pages/check_out_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/ui/pages/login_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/ui/steps/basket_steps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/ui/steps/catalog_steps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/ui/steps/login_steps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/ui/tests/test_auth.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/ui/tests/test_basket.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/ui/tests/test_catalog.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PythonProject2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PythonProject2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/pages/base_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/steps/check_out_steps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/utils/constants.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/pages/basket_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/pages/basket_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/pages/catalog_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/pages/catalog_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/pages/check_out_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/pages/check_out_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/pages/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/pages/login_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/steps/basket_steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/steps/basket_steps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/tests/test_basket.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/tests/test_basket.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

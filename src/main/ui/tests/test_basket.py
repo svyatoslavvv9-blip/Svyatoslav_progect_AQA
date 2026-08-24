@@ -1,13 +1,14 @@
-from playwright.sync_api import expect
-import pytest
+from ui.steps.catalog_steps import CatalogSteps
+from ui.steps.check_out_steps import CheckOutSteps
+from ui.steps.basket_steps import BasketSteps
 from pages.basket_page import BasketPage
 from pages.catalog_page import CatalogPage
 from pages.check_out_page import CheckOutPage
 
 
 def test_add_item_and_check_in_cart(page):
-    catalog = CatalogPage(page)
-    basket = BasketPage(page)
+    catalog = CatalogSteps(page)
+    basket = BasketSteps(page)
 
     catalog.login("standard_user", "secret_sauce")
     catalog.add_to_cart("Sauce Labs Fleece Jacket")
@@ -16,8 +17,8 @@ def test_add_item_and_check_in_cart(page):
     basket.expect_item_in_cart("Sauce Labs Fleece Jacket")
 
 def test_add_item_and_check_in_cart_second_version(page):
-    catalog = CatalogPage(page)
-    basket = BasketPage(page)
+    catalog = CatalogSteps(page)
+    basket = BasketSteps(page)
 
     catalog.login("standard_user", "secret_sauce")
     catalog.add_to_cart("Sauce Labs Fleece Jacket")
@@ -28,8 +29,8 @@ def test_add_item_and_check_in_cart_second_version(page):
     basket.expect_item_in_cart("Sauce Labs Bolt T-Shirt")
 
 def test_remove_item_from_cart(page):
-    catalog = CatalogPage(page)
-    basket = BasketPage(page)
+    catalog = CatalogSteps(page)
+    basket = BasketSteps(page)
 
     catalog.login("standard_user", "secret_sauce")
     catalog.add_to_cart("Sauce Labs Fleece Jacket")
@@ -41,8 +42,8 @@ def test_remove_item_from_cart(page):
     basket.expect_item_not_in_cart("Sauce Labs Fleece Jacket")
 
 def test_remove_item_from_cart_second_version(page):
-    catalog = CatalogPage(page)
-    basket = BasketPage(page)
+    catalog = CatalogSteps(page)
+    basket = BasketSteps(page)
 
     catalog.login("standard_user", "secret_sauce")
     catalog.add_to_cart("Sauce Labs Fleece Jacket")
@@ -59,9 +60,9 @@ def test_remove_item_from_cart_second_version(page):
     basket.expect_item_not_in_cart("Test.allTheThings() T-shirt (Red)")
 
 def test_e2e_full(page):
-    catalog = CatalogPage(page)
-    basket = BasketPage(page)
-    checkout = CheckOutPage(page)
+    catalog = CatalogSteps(page)
+    basket = BasketSteps(page)
+    checkout = CheckOutSteps(page)
 
     catalog.login("standard_user", "secret_sauce")
     catalog.add_to_cart("Sauce Labs Fleece Jacket")
@@ -80,9 +81,9 @@ def test_e2e_full(page):
     assert checkout_total == basket_total, "Сумма товаров не совпадает с корзиной"
 
 def test_checkout_without_items(page):
-    catalog = CatalogPage(page)
-    basket = BasketPage(page)
-    checkout = CheckOutPage(page)
+    catalog = CatalogSteps(page)
+    basket = BasketSteps(page)
+    checkout = CheckOutSteps(page)
 
     catalog.login("standard_user", "secret_sauce")
     catalog.add_to_cart("Sauce Labs Fleece Jacket")
