@@ -2,14 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74eb1841-7c74-45c4-8789-cf10eefa9ef3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/ui/conftest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/pages/basket_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/pages/catalog_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/pages/check_out_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/pages/login_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/steps/basket_steps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/steps/catalog_steps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/steps/login_steps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/tests/test_auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/tests/test_basket.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/tests/test_catalog.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PythonProject2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PythonProject2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/api/fixtures/user_fixture.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/api/fixtures/user_fixture.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/api/steps/admin_steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/api/steps/admin_steps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/api/steps/user_steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/api/steps/user_steps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/api/tests/credit_repay_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/api/tests/credit_repay_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/api/tests/credit_request_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/api/tests/credit_request_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/api/tests/deposit_account_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/api/tests/deposit_account_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/api/tests/transfer_user_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/api/tests/transfer_user_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,36 +55,52 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python tests.Python tests for src.main.api.tests.create_account_test.TestCreateAccount.executor": "Run",
-    "Python tests.Python tests for src.main.api.tests.credit_repay_test.TestCreditRepay.executor": "Run",
-    "Python tests.Python tests for src.main.api.tests.credit_repay_test.TestCreditRepay.test_credit_repay.executor": "Run",
-    "Python tests.Python tests for src.main.api.tests.credit_repay_test.TestCreditRepay.test_credit_repay_invalid.executor": "Run",
-    "Python tests.Python tests for src.main.api.tests.credit_request_test.CreditRequestTest.test_credit_request.executor": "Run",
-    "Python tests.Python tests for src.main.api.tests.credit_request_test.TestCreditRequest.executor": "Run",
-    "Python tests.Python tests for src.main.api.tests.credit_request_test.TestCreditRequest.test_credit_request.executor": "Run",
-    "Python tests.Python tests for src.main.api.tests.credit_request_test.TestCreditRequest.test_credit_request_invalid.executor": "Run",
-    "Python tests.Python tests for src.main.api.tests.depodit_account_test.TestDepositAccount.test_create_account_invalid.executor": "Run",
-    "Python tests.Python tests for src.main.api.tests.depodit_account_test.TestDepositAccount.test_deposit_account.executor": "Run",
-    "Python tests.Python tests for src.main.api.tests.deposit_account_test.TestDepositAccount.test_create_account_invalid.executor": "Run",
-    "Python tests.Python tests for src.main.api.tests.deposit_account_test.TestDepositAccount.test_deposit_account.executor": "Run",
-    "Python tests.Python tests for src.main.api.tests.deposit_account_test.TestDepositAccount.test_deposit_invalid.executor": "Run",
-    "Python tests.Python tests for src.main.api.tests.transfer_user_test.TestTransferUser.test_transfer_user.executor": "Run",
-    "Python tests.Python tests for src.main.api.tests.transfer_user_test.TestTransferUser.test_transfer_user_invalid.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "God__has__blessed__me",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python tests.Python tests for src.main.api.tests.create_account_test.TestCreateAccount.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for src.main.api.tests.credit_repay_test.TestCreditRepay.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for src.main.api.tests.credit_repay_test.TestCreditRepay.test_credit_repay.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for src.main.api.tests.credit_repay_test.TestCreditRepay.test_credit_repay_invalid.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for src.main.api.tests.credit_request_test.CreditRequestTest.test_credit_request.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for src.main.api.tests.credit_request_test.TestCreditRequest.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for src.main.api.tests.credit_request_test.TestCreditRequest.test_credit_request.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for src.main.api.tests.credit_request_test.TestCreditRequest.test_credit_request_invalid.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for src.main.api.tests.depodit_account_test.TestDepositAccount.test_create_account_invalid.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for src.main.api.tests.depodit_account_test.TestDepositAccount.test_deposit_account.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for src.main.api.tests.deposit_account_test.TestDepositAccount.test_create_account_invalid.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for src.main.api.tests.deposit_account_test.TestDepositAccount.test_deposit_account.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for src.main.api.tests.deposit_account_test.TestDepositAccount.test_deposit_invalid.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for src.main.api.tests.transfer_user_test.TestTransferUser.test_transfer_user.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for src.main.api.tests.transfer_user_test.TestTransferUser.test_transfer_user_invalid.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for src.main.ui.tests.test_auth.test_auth.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for src.main.ui.tests.test_auth.test_auth_invalid.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for src.main.ui.tests.test_auth.test_logout_visual_user.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for src.main.ui.tests.test_basket.test_add_item_and_check_in_cart.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for src.main.ui.tests.test_basket.test_add_item_and_check_in_cart_second_version.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for src.main.ui.tests.test_basket.test_checkout_without_items.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for src.main.ui.tests.test_basket.test_e2e_full.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for src.main.ui.tests.test_basket.test_remove_item_from_cart.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for src.main.ui.tests.test_basket.test_remove_item_from_cart_second_version.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for src.main.ui.tests.test_catalog.test_add_to_cart.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for src.main.ui.tests.test_catalog.test_add_to_cart_and_remove.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for src.main.ui.tests.test_catalog.test_product_details_jacket.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for src.main.ui.tests.test_catalog.test_product_details_onesie.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for src.main.ui.tests.test_catalog.test_remove_item_from_cart_second_version.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for src.main.ui.tests.test_catalog.test_remove_item_from_catalog.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for src.main.ui.tests.test_catalog.test_sorted_by_name_Z_A.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;God__has__blessed__me&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Python tests.Python tests for src.main.api.tests.transfer_user_test.TestTransferUser.test_transfer_user">
-    <configuration name="Python tests for src.main.api.tests.credit_repay_test.TestCreditRepay.test_credit_repay_invalid" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+}</component>
+  <component name="RunManager" selected="Python tests.Python tests for src.main.ui.tests.test_auth.test_logout_visual_user">
+    <configuration name="Python tests for src.main.ui.tests.test_auth.test_auth_invalid" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="PythonProject2" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -92,11 +113,11 @@
       <option name="DEBUG_JUST_MY_CODE" value="false" />
       <option name="RUN_TOOL" value="" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;src.main.api.tests.credit_repay_test.TestCreditRepay.test_credit_repay_invalid&quot;" />
+      <option name="_new_target" value="&quot;src.main.ui.tests.test_auth.test_auth_invalid&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for src.main.api.tests.credit_request_test.TestCreditRequest.test_credit_request_invalid" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for src.main.ui.tests.test_auth.test_logout_visual_user" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="PythonProject2" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -109,11 +130,11 @@
       <option name="DEBUG_JUST_MY_CODE" value="false" />
       <option name="RUN_TOOL" value="" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;src.main.api.tests.credit_request_test.TestCreditRequest.test_credit_request_invalid&quot;" />
+      <option name="_new_target" value="&quot;src.main.ui.tests.test_auth.test_logout_visual_user&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for src.main.api.tests.deposit_account_test.TestDepositAccount.test_deposit_invalid" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for src.main.ui.tests.test_basket.test_checkout_without_items" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="PythonProject2" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -126,11 +147,11 @@
       <option name="DEBUG_JUST_MY_CODE" value="false" />
       <option name="RUN_TOOL" value="" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;src.main.api.tests.deposit_account_test.TestDepositAccount.test_deposit_invalid&quot;" />
+      <option name="_new_target" value="&quot;src.main.ui.tests.test_basket.test_checkout_without_items&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for src.main.api.tests.transfer_user_test.TestTransferUser.test_transfer_user" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for src.main.ui.tests.test_basket.test_e2e_full" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="PythonProject2" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -143,11 +164,11 @@
       <option name="DEBUG_JUST_MY_CODE" value="false" />
       <option name="RUN_TOOL" value="" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;src.main.api.tests.transfer_user_test.TestTransferUser.test_transfer_user&quot;" />
+      <option name="_new_target" value="&quot;src.main.ui.tests.test_basket.test_e2e_full&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for src.main.api.tests.transfer_user_test.TestTransferUser.test_transfer_user_invalid" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for src.main.ui.tests.test_basket.test_remove_item_from_cart_second_version" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="PythonProject2" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -160,17 +181,17 @@
       <option name="DEBUG_JUST_MY_CODE" value="false" />
       <option name="RUN_TOOL" value="" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;src.main.api.tests.transfer_user_test.TestTransferUser.test_transfer_user_invalid&quot;" />
+      <option name="_new_target" value="&quot;src.main.ui.tests.test_basket.test_remove_item_from_cart_second_version&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for src.main.api.tests.transfer_user_test.TestTransferUser.test_transfer_user" />
-        <item itemvalue="Python tests.Python tests for src.main.api.tests.credit_repay_test.TestCreditRepay.test_credit_repay_invalid" />
-        <item itemvalue="Python tests.Python tests for src.main.api.tests.credit_request_test.TestCreditRequest.test_credit_request_invalid" />
-        <item itemvalue="Python tests.Python tests for src.main.api.tests.transfer_user_test.TestTransferUser.test_transfer_user_invalid" />
-        <item itemvalue="Python tests.Python tests for src.main.api.tests.deposit_account_test.TestDepositAccount.test_deposit_invalid" />
+        <item itemvalue="Python tests.Python tests for src.main.ui.tests.test_auth.test_logout_visual_user" />
+        <item itemvalue="Python tests.Python tests for src.main.ui.tests.test_basket.test_e2e_full" />
+        <item itemvalue="Python tests.Python tests for src.main.ui.tests.test_auth.test_auth_invalid" />
+        <item itemvalue="Python tests.Python tests for src.main.ui.tests.test_basket.test_checkout_without_items" />
+        <item itemvalue="Python tests.Python tests for src.main.ui.tests.test_basket.test_remove_item_from_cart_second_version" />
       </list>
     </recent_temporary>
   </component>
